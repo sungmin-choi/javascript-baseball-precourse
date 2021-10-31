@@ -1,4 +1,4 @@
-import { ID } from "../utils/constants.js";
+import { ID,MESSAGE} from "../utils/constants.js";
 import { generateComputerNumber } from "../utils/games.js";
 import { validationInputNumber } from "../utils/validations.js";
 export default function BaseballGame(){
@@ -6,24 +6,23 @@ export default function BaseballGame(){
     const $submit = document.getElementById(ID.SUBMIT);
     const $userInput=document.getElementById(ID.USER_INPUT);
 
+
     const computerInputNumbers = generateComputerNumber();
-    console.log(`🎁this is answer:${computerInputNumbers}`);
+    console.log(`${MESSAGE.COMPUTER_NUMBER} ${computerInputNumbers}`);
+    const play=(computerInputNumbers,userInputNumbers)=>{
+        console.log(computerInputNumbers,userInputNumbers);
+    }
 
     const userInputNumber=(e)=>{
         e.preventDefault();
         const userInputNumbers = $userInput.value.split('').map(e=>+e);
         if(validationInputNumber(userInputNumbers)){
-            console.log("good");
+            play(computerInputNumbers,userInputNumbers);
 
         }else{
-            alert("😢입력이 잘못됬습니다 다시 입력해주세요.");
+            alert(MESSAGE.WRONG_ALERT);
         }
     }
     $submit.addEventListener("click",userInputNumber);
-
-
-
-
-
 
 }
