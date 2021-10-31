@@ -1,8 +1,8 @@
-export default ID={
-    ID_APP :"app",
-    ID_INPUT:"user-input",
-    ID_SUBMIT:"submit",
-    ID_RESULT:"result",
-    ID_RESTART:"game-restart-button"
+export const ID={
+    APP :"app",
+    USER_INPUT:"user-input",
+    SUBMIT:"submit",
+    RESULT_VIEW:"result",
+    RESTART:"game-restart-button"
 
 }

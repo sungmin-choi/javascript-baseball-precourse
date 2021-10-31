@@ -1,10 +1,17 @@
-export default class BaseballGame{
-    constructor(){
-        this.play();
+import { ID } from "../utils/constants.js";
+export default function BaseballGame(){
+    const $app=document.getElementById(ID.APP);
+    const $submit = document.getElementById(ID.SUBMIT);
+    const $userInput=document.getElementById(ID.USER_INPUT);
+    const userInputNumber=(e)=>{
+        e.preventDefault();
+        console.log($userInput.value);
     }
-    play(){
-        console.log("fuck u");
-    }
+    $submit.addEventListener("click",userInputNumber);
+
+
+
+
 
 
 }
