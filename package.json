@@ -1,0 +1,19 @@
+{
+  "name": "javascript-baseball-precourse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sungmin-choi/javascript-baseball-precourse.git"
+  },
+  "author": "sungmin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sungmin-choi/javascript-baseball-precourse/issues"
+  },
+  "homepage": "https://github.com/sungmin-choi/javascript-baseball-precourse#readme"
+}
